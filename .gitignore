@@ -1,0 +1,8 @@
+# Environment variables
+.env
+
+# Python cache & virtual environments
+__pycache__/
+myvenv/
+.vscode/
+output_reports/

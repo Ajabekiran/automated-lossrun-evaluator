@@ -18,7 +18,7 @@ This system automates the entire intake-to-decision workflow:
 
 * **Language:** Python 3.10+
 * **Orchestration:** LangChain (`ChatPromptTemplate`, `with_structured_output`)
-* **LLM Inference:** Groq API (`llama-3.3-70b-versatile` for ultra-fast, high-accuracy structured reasoning)
+* **LLM Inference:** Groq API (`openai/gpt-oss-120b` for ultra-fast, high-accuracy structured reasoning)
 * **Data Validation & Contracts:** Pydantic V2
 * **Document Ingestion:** `pypdf`
 * **Configuration:** `python-dotenv`
@@ -30,7 +30,7 @@ This system automates the entire intake-to-decision workflow:
 ```text
 ├── output_reports/             # Exported structured JSON data
 ├── models.py                   # Pydantic data contracts (ClaimItem & LossRunReport)
-├── batch_process.py            # Multi-carrier PDF text extraction and LLM parsing pipeline
+├── batch_processing.py         # Multi-carrier PDF text extraction and LLM parsing pipeline
 ├── validate_sop.py             # Automated Underwriting Rules Engine (SOP compliance)
 ├── requirements.txt            # Project dependencies
 └── .env.example                # Environment variable template
